@@ -5,7 +5,7 @@ body {
     margin: 0 auto;
 }
 
-.btn {
+.elemento-imagem {
     width: 200px;
     height: 200px;
     background-color: #fff;
@@ -17,11 +17,6 @@ body {
     justify-content: center;
 }
 
-.p-btn {
-    text-align: center;
-    font-size: 20px;
-    color: #615df0;
-}
 
 img {
     width: 100px;
@@ -35,23 +30,29 @@ section {
     flex-direction: column;
 }
 
-#clickButton {
+.botao-com-click{
     color: #615df0;
+    background: #fff;
     border: none;
     width: 150px;
     margin: 0 auto;
     border-radius: 40px;
     margin-top: 20px;
     padding: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 10px 10px 38px 3px rgba(0,0,0,0.19);
 }
 
-.clickButton {
-    color: black;
-    border: none;
+#botaoSemClick {
+    color:  #fff;
     width: 150px;
     margin: 0 auto;
     border-radius: 40px;
     margin-top: 20px;
     padding: 15px;
-    background: #fdeaa7;
+    background: #615df0;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 10px 10px 38px 3px rgba(0,0,0,0.19);
 }
