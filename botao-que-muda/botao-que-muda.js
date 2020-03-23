@@ -21,9 +21,16 @@ elementoButton.addEventListener('click', TrocaCorBotao);
     }
 
     function TrocaCorBotao (){
-        console.log('botao')
+        let elementoButton = document.getElementById("botaoSemClick")
+        if(!estadoBotao){
+            console.log('botao')
+            elementoButton.classList.add('botao-com-click')
+            estadoBotao = true;
+        }
+        else {
+            elementoButton.classList.remove('botao-com-click')
+            estadoBotao = false;
+        }
     }
-     
 
 // se tiver clicado bota essa img, se nao bota essa
-// if () src="./ice-cream.png"

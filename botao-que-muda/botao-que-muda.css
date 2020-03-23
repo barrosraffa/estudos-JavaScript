@@ -30,7 +30,22 @@ section {
     flex-direction: column;
 }
 
-.botao-com-click{
+#botaoSemClick {
+    color: #fff;
+    background: #615df0;
+    border: none;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 40px;
+    margin-top: 20px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 10px 10px 38px 3px rgba(0,0,0,0.19);
+}
+
+#botaoSemClick.botao-com-click{
     color: #615df0;
     background: #fff;
     border: none;
@@ -41,18 +56,5 @@ section {
     padding: 15px;
     cursor: pointer;
     outline: none;
-    box-shadow: 10px 10px 38px 3px rgba(0,0,0,0.19);
-}
-
-#botaoSemClick {
-    color:  #fff;
-    width: 150px;
-    margin: 0 auto;
-    border-radius: 40px;
-    margin-top: 20px;
-    padding: 15px;
-    background: #615df0;
-    cursor: pointer;
-    font-size: 20px;
     box-shadow: 10px 10px 38px 3px rgba(0,0,0,0.19);
 }
