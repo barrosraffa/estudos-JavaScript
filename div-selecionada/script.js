@@ -17,6 +17,7 @@ function selecionaDiv() {
     }
     else {
         elementoDivSelect.classList.remove("div-selecionada");
+        elementoDivSelectImg.src="";
         estadoDaDiv = false;
         estadoDivSelectImg = false;
     }
