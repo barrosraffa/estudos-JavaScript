@@ -1,0 +1,92 @@
+body {
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-container {
+    width: 95%;
+    height: 700px;
+    width: 95%;
+    margin-left: 3%;
+    border-radius: 20px;
+    box-shadow: 7px 7px 14px 5px rgba(0, 0, 0, 0.18);
+}
+
+.header-nova-tarefa {
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    padding: 35px;
+}
+
+h1 {
+    color:  rgba(0, 0, 0, 0.18);
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 3;
+}
+
+.body-conteudo-tarefas {
+    background-color: #ffffff;
+    width: 95%;
+    height: 75%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.div-vazia {
+    background-color: #f8cfa8;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+input {
+    padding: 22px;
+    border-radius: 14px;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.botao-add {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* .lista-tarefas {
+
+} */
