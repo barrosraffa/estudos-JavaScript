@@ -12,12 +12,39 @@ botaoAdd.addEventListener('click', function(){
     }
 });
 
-//adicionando tarefas
+
 function botaoAdicionar() {
-    console.log("aaaaaaa")
+    // console.log("aaaaaaa")
+
+    //adicionando tarefas
     let tarefaLi = document.createElement("li")
     tarefaLi.innerHTML = inputDigitarTarefa.value //ve o valor do meu input e se tiver maior que 0 ele adiciona no html
     listaTarefas.appendChild(tarefaLi)    
+
+
+    //limpando o input de tarefas
+    inputDigitarTarefa.value = ' '
+
+
+    //deletando tarefas
+    let deletarTarefa = document.createElement("span")
+    deletarTarefa.innerText = "delete"
+    tarefaLi.appendChild(deletarTarefa)
+    listaTarefas.appendChild(deletarTarefa)
+
+    deletarTarefa.addEventListener("click" , function(){
+        tarefaLi.remove()
+    })
+
+    // concluindo uma tarefa
+    // removendo uma tarefa
+    // concluindo todas as tarefas
+    // desmarcando todas as tarefas
+    // removendo todas as tarefas
+    // Adicionar o atributo que permite a movimentação
 }
+
+
+
 
 
