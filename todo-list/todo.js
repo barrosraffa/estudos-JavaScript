@@ -30,7 +30,6 @@ function botaoAdicionar() {
     let deletarTarefa = document.createElement("span")
     deletarTarefa.innerText = "delete"
     tarefaLi.appendChild(deletarTarefa)
-    listaTarefas.appendChild(deletarTarefa)
 
     deletarTarefa.addEventListener("click" , function(){
         tarefaLi.remove()
