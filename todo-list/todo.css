@@ -16,7 +16,7 @@ body {
 
 .box-container {
     width: 95%;
-    height: 700px;
+    /* height: 700px; */
     width: 95%;
     margin-left: 3%;
     border-radius: 20px;
@@ -28,6 +28,16 @@ body {
     border-radius: 20px;
     text-align: center;
     padding: 35px;
+}
+
+.body-conteudo-tarefas {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 h1 {
@@ -55,6 +65,7 @@ ul {
 ul li.checked {
     text-decoration: line-through;
     color: #444444;
+    outline: none;
    
 }
 
@@ -72,14 +83,6 @@ span {
 span:hover {
     background-color: red;
 
-}
-
-.body-conteudo-tarefas {
-    background-color: #ffffff;
-    width: 80%;
-    height: 75%;
-    margin: 0 auto;
-    border-radius: 20px;
 }
 
 .div-vazia {
@@ -108,7 +111,7 @@ input {
 .botoes-acoes {
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin: 15% 0;
 }
 
 .botao-add {
@@ -188,6 +191,7 @@ input {
 .tarefa-concluida {
     text-decoration: line-through;
     color:  rgb(135, 135, 135);
+    outline: none;
 }
 
 /* .lista-tarefas {

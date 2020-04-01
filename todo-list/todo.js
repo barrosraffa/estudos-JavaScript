@@ -1,7 +1,7 @@
 let botaoAdd = document.getElementById('botaoAdd');
 let listaTarefas = document.getElementById('listaTarefas');
 let inputDigitarTarefa = document.getElementById('digitarTarefa');
-let botaoTarefaConcluida = document.getElementById('botaoTarefaConcluida');
+let btnConcluirTodas = document.getElementById('btnConcluirTodas');
 let btnDesmarcarTodas = document.getElementById('btnDesmarcarTodas');
 let btnExcluirTodas = document.getElementById('btnExcluirTodas');
 
@@ -18,7 +18,6 @@ botaoAdd.addEventListener('click', function(){
 });
 
 function botaoAdicionar() {
-    // console.log("aaaaaaa")
 
     //adicionando tarefas
     let tarefaLi = document.createElement("li")
@@ -28,7 +27,7 @@ function botaoAdicionar() {
     //limpando o input de tarefas
     inputDigitarTarefa.value = ' '
 
-    //removendo uma tarefa
+    // deletando uma tarefa 
     let deletarTarefa = document.createElement("span")
     deletarTarefa.innerText = "x"
     tarefaLi.appendChild(deletarTarefa)
@@ -39,27 +38,24 @@ function botaoAdicionar() {
 
     // concluindo uma tarefa
     tarefaLi.addEventListener('click', function () {
-        tarefaLi.tagName === 'LI' 
-        tarefaLi.classList.toggle('tarefa-concluida');
-        
+        tarefaLi.tagName === 'li' 
+        tarefaLi.classList.toggle('tarefa-concluida'); 
+        // toggle alterna entre um e outro
     })
 
-    // tarefaLi.addEventListener("click", function(){
-    //     console.log(`click ${estadoTarefaLi}`)
-    //     if(estadoTarefaLi) {
-    //         tarefaLi.classList.add('tarefa-concluida')
+    // concluindo todas as tarefas
+    btnConcluirTodas.addEventListener('click', function () {
+        console.log('funfou?')
+        btnConcluirTodas.tagName === 'LI'
+        btnConcluirTodas.classList.add('tarefa-concluida')
 
-    //         estadoTarefaLi = false
-    //     }
-    //     else {
-    //         tarefaLi.classList.remove('tarefa-concluida')
-    //         estadoTarefaLi = true
-    //     }
-    // })
+    })
+
+    // removendo todas as tarefas
+    btnExcluirTodas.addEventListener('click', function () {
+        tarefaLi.remove()
+    })
 }
 
-// deletando tarefas 
-// concluindo todas as tarefas
 // desmarcando todas as tarefas
-// removendo todas as tarefas
 // Adicionar o atributo que permite a movimentação
