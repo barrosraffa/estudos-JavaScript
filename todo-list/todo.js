@@ -38,7 +38,6 @@ function botaoAdicionar() {
 
     // concluindo uma tarefa
     tarefaLi.addEventListener('click', function () {
-        tarefaLi.tagName === 'li' 
         tarefaLi.classList.toggle('tarefa-concluida'); 
         // toggle alterna entre um e outro
     })
@@ -46,9 +45,12 @@ function botaoAdicionar() {
     // concluindo todas as tarefas
     btnConcluirTodas.addEventListener('click', function () {
         console.log('funfou?')
-        btnConcluirTodas.tagName === 'LI'
-        btnConcluirTodas.classList.add('tarefa-concluida')
+        tarefaLi.classList.add('tarefa-concluida')
+    })
 
+    // desmarcando todas as tarefas
+    btnDesmarcarTodas.addEventListener('click', function(){
+        tarefaLi.classList.remove('tarefa-concluida')
     })
 
     // removendo todas as tarefas
@@ -57,5 +59,4 @@ function botaoAdicionar() {
     })
 }
 
-// desmarcando todas as tarefas
 // Adicionar o atributo que permite a movimentação
