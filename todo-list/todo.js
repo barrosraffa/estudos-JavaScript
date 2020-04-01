@@ -5,6 +5,8 @@ let botaoTarefaConcluida = document.getElementById('botaoTarefaConcluida');
 let btnDesmarcarTodas = document.getElementById('btnDesmarcarTodas');
 let btnExcluirTodas = document.getElementById('btnExcluirTodas');
 
+let estadoTarefaLi = true;
+
 botaoAdd.addEventListener('click', botaoAdicionar)
 
 botaoAdd.addEventListener('click', function(){
@@ -14,7 +16,6 @@ botaoAdd.addEventListener('click', function(){
         return false;
     }
 });
-
 
 function botaoAdicionar() {
     // console.log("aaaaaaa")
@@ -37,9 +38,22 @@ function botaoAdicionar() {
     })
 
     // concluindo uma tarefa
+    tarefaLi.addEventListener("click", function(){
+        console.log(`click ${estadoTarefaLi}`)
+        if(estadoTarefaLi) {
+            tarefaLi.classList.add('tarefa-concluida')
+            
+            estadoTarefaLi = false
+        }
+        else {
+            tarefaLi.classList.remove('tarefa-concluida')
+            estadoTarefaLi = true
+        }
+    })
 }
-    // deletando tarefas 
-    // concluindo todas as tarefas
-    // desmarcando todas as tarefas
-    // removendo todas as tarefas
-    // Adicionar o atributo que permite a movimentação
+    
+// deletando tarefas 
+// concluindo todas as tarefas
+// desmarcando todas as tarefas
+// removendo todas as tarefas
+// Adicionar o atributo que permite a movimentação

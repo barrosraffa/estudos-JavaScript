@@ -71,7 +71,7 @@ span {
 
 span:hover {
     background-color: red;
-    
+
 }
 
 .body-conteudo-tarefas {
@@ -126,7 +126,7 @@ input {
 
 .tarefas-concluidas {
     width: 90px;
-    height: 30px;
+    height: 40px;
     border: none;
     background: white;
     color: black;
@@ -135,17 +135,18 @@ input {
     cursor: pointer;
     border-radius: 20px;
     text-transform: uppercase;
-    box-shadow: 1px 1px 7px 0px rgba(158, 237, 148, 0.75);
+    border: 1px solid rgb(216, 216, 216);
 }
 
 .tarefas-concluidas:hover {
     background-color: rgb(62, 167, 62);
     color: white;
+    box-shadow: 1px 1px 7px 0px rgba(158, 237, 148, 0.75);
 }
 
 .excluir-tarefas {
     width: 90px;
-    height: 30px;
+    height: 40px;
     border: none;
     background: white;
     color: black;
@@ -154,17 +155,18 @@ input {
     cursor: pointer;
     border-radius: 20px;
     text-transform: uppercase;
-    box-shadow: 1px 1px 7px 0px rgba(255, 141, 141, 0.75)
+    border: 1px solid rgb(216, 216, 216);
 }
 
 .excluir-tarefas:hover {
     background-color: red;
     color: white;
+    box-shadow: 1px 1px 7px 0px rgba(255, 141, 141, 0.75)
 }
 
 .desmarcar-tarefas {
     width: 90px;
-    height: 30px;
+    height: 40px;
     border: none;
     background: white;
     color: black;
@@ -174,12 +176,18 @@ input {
     border-radius: 20px;
     margin: 0 30px;
     text-transform: uppercase;
-    box-shadow: 1px 1px 7px 0px rgba(201, 201, 201, 0.75)
+    border: 1px solid rgb(216, 216, 216);
 }
 
 .desmarcar-tarefas:hover {
     background-color: rgb(135, 135, 135);
     color: white;
+    box-shadow: 1px 1px 7px 0px rgba(201, 201, 201, 0.75)
+}
+
+.tarefa-concluida {
+    text-decoration: line-through;
+    color:  rgb(135, 135, 135);
 }
 
 /* .lista-tarefas {
