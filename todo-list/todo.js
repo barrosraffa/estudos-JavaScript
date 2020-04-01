@@ -17,6 +17,7 @@ botaoAdd.addEventListener('click', function(){
     }
 });
 
+
 function botaoAdicionar() {
 
     //adicionando tarefas
@@ -57,6 +58,10 @@ function botaoAdicionar() {
     btnExcluirTodas.addEventListener('click', function () {
         tarefaLi.remove()
     })
+
 }
 
+// adicionais
+
+// botao adicionar com enter
 // Adicionar o atributo que permite a movimentação
