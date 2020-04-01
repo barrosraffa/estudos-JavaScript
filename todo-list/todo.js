@@ -38,20 +38,26 @@ function botaoAdicionar() {
     })
 
     // concluindo uma tarefa
-    tarefaLi.addEventListener("click", function(){
-        console.log(`click ${estadoTarefaLi}`)
-        if(estadoTarefaLi) {
-            tarefaLi.classList.add('tarefa-concluida')
-            
-            estadoTarefaLi = false
-        }
-        else {
-            tarefaLi.classList.remove('tarefa-concluida')
-            estadoTarefaLi = true
-        }
+    tarefaLi.addEventListener('click', function () {
+        tarefaLi.tagName === 'LI' 
+        tarefaLi.classList.toggle('tarefa-concluida');
+        
     })
+
+    // tarefaLi.addEventListener("click", function(){
+    //     console.log(`click ${estadoTarefaLi}`)
+    //     if(estadoTarefaLi) {
+    //         tarefaLi.classList.add('tarefa-concluida')
+
+    //         estadoTarefaLi = false
+    //     }
+    //     else {
+    //         tarefaLi.classList.remove('tarefa-concluida')
+    //         estadoTarefaLi = true
+    //     }
+    // })
 }
-    
+
 // deletando tarefas 
 // concluindo todas as tarefas
 // desmarcando todas as tarefas
