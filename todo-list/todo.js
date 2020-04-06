@@ -59,6 +59,31 @@ function botaoAdicionar() {
         tarefaLi.remove()
     })
 
+    // Adiciona o atributo que permite a movimentação
+    tarefaLi.setAttribute('draggable', true);
+
+    //Seleciona o evento de click, define que o elemento pode ser arrastado (guarda a classe numa variável)
+    tarefaLi.addEventListener('dragstart', dragStart);
+
+    //Seleciona a localização do evento de click e direciona para inserção depois do proximo elemento
+    tarefaLi.addEventListener('dragover', dragOver);
+
+    // Finaliza o momvimento
+    tarefaLi.addEventListener('dragend', dragEnd);
+
+    function dragStart(event) {
+        dragging = event.target.closest('li');
+    }
+
+    function dragOver(event) {
+        const location = event.target.closest('li');
+        this.parentNode.insertBefore(dragging, location);// this.parentNode equivale a class timeline
+    }
+    function dragEnd() {
+        dragging = null;//usamos o dragging = null para dizer que deve parar o movimento
+
+    }
+
 }
 
 // adicionais
