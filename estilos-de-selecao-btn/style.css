@@ -30,6 +30,25 @@ body {
     cursor: pointer;
     outline: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-selecionado {
+    width: 100px;
+    height: 100px;
+    background-color: #D5D5D5;
+    box-shadow: inset 4px 4px 8px 1px rgba(0, 0, 0, 0.18) , inset -4px -2px 10px 1px rgba(242, 242, 242, 0.947);
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: hotpink;
 }
 
 .div-resultado{
@@ -52,5 +71,21 @@ body {
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.18);
     text-transform: uppercase;
+    font-size: 13px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.icon-btn{
+    text-align: center;
+    color: rgb(133, 133, 133);
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    color: rgb(133, 133, 133);
     font-size: 13px;
 }
