@@ -194,6 +194,8 @@ input {
     outline: none;
 }
 
-/* .lista-tarefas {
-
-} */
+.numero-tarefas {
+    font-size: 11px;
+    text-align: center;
+    color: rgb(135, 135, 135);
+}

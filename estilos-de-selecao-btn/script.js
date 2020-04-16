@@ -28,9 +28,9 @@ btnSelecionarTres.addEventListener('click', BotaoSelecionarSoUm)
 btnSelecionarQuatro.addEventListener('click', BotaoSelecionarSoUm)
 
 btnSelecionarA.addEventListener('click', BotaoSelecionarTres)
-// btnSelecionarB.addEventListener('click', BotaoSelecionarTres)
-// btnSelecionarC.addEventListener('click', BotaoSelecionarTres)
-// btnSelecionarD.addEventListener('click', BotaoSelecionarTres)
+btnSelecionarB.addEventListener('click', BotaoSelecionarTres)
+btnSelecionarC.addEventListener('click', BotaoSelecionarTres)
+btnSelecionarD.addEventListener('click', BotaoSelecionarTres)
 
 let estadoDaDiv = false; 
 
